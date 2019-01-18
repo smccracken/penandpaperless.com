@@ -1,0 +1,39 @@
+{
+  "name": "penandpaperless",
+  "version": "0.0.1",
+  "description": "Links for an organized home",
+  "scripts": {
+    "build": "grunt && eleventy && grunt crit",
+    "watch": "grunt && grunt watch && eleventy --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Wilto/wilto-makes-food.git"
+  },
+  "author": {
+    "name": "Scott McCracken",
+    "email": "scottmccracken@gmail.com",
+    "url": "http://scottmccracken.net"
+  },
+  "license": "MIT",
+  "homepage": "https://penandpaperless.com",
+  "dependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.0.2",
+    "luxon": "^0.3.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.3.6",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-criticalcss": "^2.1.0",
+    "grunt-responsive-images": "^1.10.1",
+    "markdown-it-anchor": "^4.0.0",
+    "matchdep": "^2.0.0"
+  }
+}
