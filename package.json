@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Links for an organized home",
   "scripts": {
-    "build": "grunt && eleventy && grunt crit",
+    "build": "grunt && eleventy",
     "watch": "grunt && grunt watch && eleventy --watch"
   },
   "repository": {
