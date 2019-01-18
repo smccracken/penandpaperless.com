@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" class="fonts">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
+		<meta name="description" content="{% if lede %}{{ lede }}{% else %}{{ metadata.description }}{% endif %}">
+	</head>
+	<body>
+		<a href="#main" class="a11y-only focusable skiplink">Skip to Main Content</a>
+		<header role="banner" class="site-head">
+			<h1 class="site-hed"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+			<h2>{{ metadata.tagline }}</h2>
+		</header>
+	</body>
+
+	<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+		{{ layoutContent | safe }}
+	</main>
+</html>
